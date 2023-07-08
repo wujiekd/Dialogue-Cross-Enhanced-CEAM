@@ -1,2 +1,4 @@
 # SwinSM_for_Engagement_Estimation
-(ACM MultiMediate 2023)MultiMediate: Multi-modal Group Behaviour Analysis for Artificial Mediation
+Sliding windows Seq2seq Modeling for Engagement Estimation
+
+The complete code will be open source soon.
