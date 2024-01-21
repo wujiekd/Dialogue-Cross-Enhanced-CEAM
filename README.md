@@ -49,13 +49,13 @@ Download the dataset from the above link to the 'noxi' folder.
 
 Perform preprocessing operations, normalization, and merging of multi-modal features.
 
-```shell
+```sh
 python process.py
 ```
 
 Use the center-based sliding window to partition multi-modal feature sequences for training, validation, and testing.
 
-```shell
+```sh
 python CSW.py
 ```
 
@@ -80,7 +80,7 @@ python train.py \
 ```sh
 python train.py \
     --N 1 \
-    --M 2 \
+    --M 1 \
     --K 2 \
     --save_dir DCECEAM
 ```
@@ -89,7 +89,7 @@ python train.py \
 
 ### 3.1. Eval CEAM
 
-```shell
+```sh
 python eval.py \
     --N 3 \
     --M 0 \
@@ -99,10 +99,10 @@ python eval.py \
 
 ### 3.2. Eval Dialogue Cross-Enhanced CEAM
 
-```shell
+```sh
 python eval.py \
     --N 1 \
-    --M 2 \
+    --M 1 \
     --K 2 \
     --save_dir DCECEAM
 ```
@@ -120,7 +120,7 @@ python eval.py \
 
 It can be downloaded from Google Cloud Disk:  Pretrained weights will be released later.
 
-It can be directly used for inference and get final result.
+It can be directly used for inference and to get the final result.
 
 ## References
 
