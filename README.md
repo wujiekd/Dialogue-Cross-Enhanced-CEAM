@@ -1,6 +1,7 @@
 # Dialogue Cross-Enhanced Central Engagement Attention Model for Real-Time Engagement Estimation
 
-## An illustration of our proposed model architecture.![image]([src/backbone.png](https://github.com/wujiekd/Dialogue-Cross-Enhanced-CEAM/blob/main/img/backbone.png?raw=true))
+## An illustration of our proposed model architecture.
+![image](https://raw.githubusercontent.com/wujiekd/Dialogue-Cross-Enhanced-CEAM/main/img/backbone.png)
 
 ## 1. Environment setting
 
