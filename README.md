@@ -109,7 +109,7 @@ python eval.py \
 
 ## 4. Result
 
-| Model                               | Method                      | Val CCC   | Test CCC  | Inference speed （FPS） | Params  (M) |
+| Model | Method | Val CCC   | Test CCC  | Inference speed （FPS） | Params  (M) |
 |:----------------------------------- |:---------------------------:|:---------:|:---------:|:---------------------:|:-----------:|
 | SA-based model [Yu et al.]          | Sliding window              | 0.796     | -         | 4537                  | 22.67       |
 | BiLSTM-based model [Yu et al.]      | Sliding window              | 0.818     | 0.690     | 1310                  | 36.17       |
