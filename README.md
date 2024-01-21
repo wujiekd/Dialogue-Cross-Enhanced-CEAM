@@ -2,7 +2,7 @@
 
 ## An illustration of our proposed model architecture.
 <div align="center">
-<img src="https://raw.githubusercontent.com/wujiekd/Dialogue-Cross-Enhanced-CEAM/main/img/backbone.png" alt="image" width="300" height="200">
+<img src="https://raw.githubusercontent.com/wujiekd/Dialogue-Cross-Enhanced-CEAM/main/img/backbone.png" alt="image" width="500" height="1200">
 </div>
 ## 1. Environment setting
 
