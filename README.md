@@ -24,7 +24,7 @@ Download the dataset from the above link to the 'noxi' folder.
 │   ├── code/
 │   │   ├── data
 │   │   ├── src
-└── └── └── preprocessing
+└── └── └── output_model
 │   ├── noxi/
 │   │   ├── train
 │   │   ├── val
