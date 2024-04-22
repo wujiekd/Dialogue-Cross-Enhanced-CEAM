@@ -3,6 +3,7 @@ import torch.nn as nn
 import math
 from einops import rearrange, repeat
 
+
 class LearnableAbsolutePositionEmbedding(nn.Module):
     def __init__(self, max_position_embeddings, hidden_size):
         super().__init__()
