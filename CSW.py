@@ -79,28 +79,6 @@ def split_per_data(all_data,all_label,class_data):
             split_label(all_label[start_index:end_index],save_dir,name)
         start_index += count
 
-# def save_json(train_id_list,val_id_list,fold):
-#     save_dir = os.path.join(output_path,fold)
-#     if not os.path.exists(save_dir):
-#         os.mkdir(save_dir)
-
-#     if fold == "fold_1":
-#         train_class = train_class_data
-#         val_class = val_class_data
-#     else:
-#         train_class = {key: value for key, value in all_class_data.items() if key.split(';')[1] in train_id_list}
-#         val_class = {key: value for key, value in all_class_data.items() if key.split(';')[1] in val_id_list}
-
-#     train_class_data_json_str = json.dumps(train_class)
-
-#     with open(f'{save_dir}/train_class_dict.json', 'w') as file:
-#         file.write(train_class_data_json_str)
-
-#     val_class_data_json_str = json.dumps(val_class)
-
-#     with open(f'{save_dir}/val_class_dict.json', 'w') as file:
-#         file.write(val_class_data_json_str)
-#     print("json data end")
 
 train_id_list = ['003','031','028', '020','040','050','030','042','023','046','013','064','026','056','068','001','055','045','072','052',
                   '077','021','047','044','049','029','070','069','038','022','048','067','057','027','043','039','073','066']
@@ -142,17 +120,5 @@ if __name__ == "__main__":
         test_class_data = json.load(file)
 
     split_per_data(X_test,y_test,test_class_data)
-
-    # output_path = f'./{target_name}/data_class'
-
-    # with open(f"{input_path}/train_class_dict.json", 'r') as file:
-    #     train_class_data = json.load(file)
-    # with open(f"{input_path}/val_class_dict.json", 'r') as file:
-    #     val_class_data = json.load(file)
-
-    # all_class_data = train_class_data.copy()
-    # all_class_data.update(val_class_data)
-
-    # save_json(train_id_list,val_id_list,"fold_1")
 
 
