@@ -24,8 +24,6 @@ train_id_list = ['003','031','028', '020','040','050','030','042','023','046','0
 val_id_list = ['007', '009', '076', '063', '011', '058', '014', '062', '074', '075']
 
 
-
-
 def parse_arguments():
     parser = argparse.ArgumentParser(description='CEAM Script Description')
 
