@@ -21,7 +21,7 @@ class CenterMSELoss(nn.Module):
 
         weighted_loss = torch.mean(mse_loss * weights) # explicitly
 
-        weighted_loss = (self.beta + self.beta + 1) / 3 * weighted_loss  # implicitly
+        weighted_loss = weights / 3 * weighted_loss  # implicitly
 
         return weighted_loss
 
