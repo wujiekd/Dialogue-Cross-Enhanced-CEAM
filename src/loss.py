@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class CenterMSELoss(nn.Module):
-    def __init__(self, reduction='mean', beta=0.5):
+    def __init__(self, reduction='none', beta=0.5):
         super(CenterMSELoss, self).__init__()
         self.beta = beta
         self.MSE_loss = nn.MSELoss(reduction=reduction)
@@ -19,9 +19,9 @@ class CenterMSELoss(nn.Module):
         ]).to(outputs.device)
         weights = weights.unsqueeze(0).expand(outputs.shape[0], -1)
 
-        weighted_loss = torch.mean(mse_loss * weights) # implicit Normalize
+        weighted_loss = torch.mean(mse_loss * weights) # explicitly
 
-        #weighted_loss = (self.beta + self.beta + 1) / 3 * weighted_loss  # Normalize
+        weighted_loss = (self.beta + self.beta + 1) / 3 * weighted_loss  # implicitly
 
         return weighted_loss
 
