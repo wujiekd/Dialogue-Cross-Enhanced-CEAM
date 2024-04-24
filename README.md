@@ -112,7 +112,7 @@ python eval.py \
 | Model | Method | Val CCC   | Test CCC  | Inference speed （FPS） | Params  (M) |
 |:----------------------------------- |:---------------------------:|:---------:|:---------:|:---------------------:|:-----------:|
 | SA-based model [Yu et al.]          | Sliding window              | 0.796     | -         | 4537                  | 22.67       |
-| BiLSTM-based model [Yu et al.]      | Sliding window              | 0.818     | 0.690     | 1310                  | 36.17       |
+| BiLSTM-based model [Yu et al.]      | Sliding window              | 0.818     | 0.689     | 1310                  | 36.17       |
 | CEAM (Ours)                         | Center-based sliding window | 0.821     | 0.691     | **6455**              | 23.98       |
 | Dialogue Cross-Enhanced CEAM (Ours) | Center-based sliding window | **0.835** | **0.704** | 6185                  | 31.07       |
 
