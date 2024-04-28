@@ -3,7 +3,6 @@ import os
 import numpy as np
 from torch.utils.data import DataLoader
 
-
 class train_and_valDataset(Dataset):
     def __init__(self, data_path, id_list):
         self.data_list = []
@@ -40,9 +39,6 @@ class train_and_valDataset(Dataset):
         label = np.load(self.labels_list[idx])
 
         return data,partner_data, label
-
-
-
 
 class testDataset(Dataset):
     def __init__(self,data_path, id, name,flag=True):
