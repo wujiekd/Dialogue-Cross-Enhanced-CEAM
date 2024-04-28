@@ -118,7 +118,7 @@ python eval.py \
 
 ## 5. Model checkpoints
 
-It can be downloaded from Google Cloud Disk:  Pretrained weights will be released later.
+It can be downloaded from [Google Cloud Disk](https://drive.google.com/file/d/1bHBdk-5Uo0uKYLoxjDW9cHl1y-gEtgcJ/view?usp=sharing).
 
 It can be directly used for inference and to get the final result.
 
