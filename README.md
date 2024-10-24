@@ -49,10 +49,6 @@ Download the dataset from the above link to the 'noxi' folder.
 
 Perform preprocessing operations, normalization, and merging of multi-modal features.
 
-```sh
-python process.py
-```
-
 Use the center-based sliding window to partition multi-modal feature sequences for training, validation, and testing.
 
 ```sh
